@@ -42,11 +42,11 @@ export default function SquadSelection() {
 
   const getRoleColors = (role) => {
     switch (role) {
-      case 'Batsman': return 'bg-blue-500/20 text-blue-400 border-blue-500/30';
-      case 'Bowler': return 'bg-red-500/20 text-red-400 border-red-500/30';
-      case 'All-Rounder': return 'bg-purple-500/20 text-purple-400 border-purple-500/30';
-      case 'Wicketkeeper': return 'bg-amber-500/20 text-amber-400 border-amber-500/30';
-      default: return 'bg-slate-500/20 text-slate-400 border-slate-500/30';
+      case 'Batsman': return 'bg-blue-50 text-blue-700 border-blue-200';
+      case 'Bowler': return 'bg-red-50 text-red-700 border-red-200';
+      case 'All-Rounder': return 'bg-purple-50 text-purple-700 border-purple-200';
+      case 'Wicketkeeper': return 'bg-amber-50 text-amber-700 border-amber-200';
+      default: return 'bg-slate-100 text-slate-700 border-slate-200';
     }
   };
 
@@ -62,42 +62,42 @@ export default function SquadSelection() {
 
   const getStatusIconAndColor = (status) => {
     switch (status) {
-      case 'available': return { icon: <CheckCircle2 size={14} className="mr-1" />, classes: 'bg-emerald-500/20 text-emerald-400' };
-      case 'unavailable': return { icon: <XCircle size={14} className="mr-1" />, classes: 'bg-rose-500/20 text-rose-400' };
-      case 'tentative': return { icon: <AlertCircle size={14} className="mr-1" />, classes: 'bg-yellow-500/20 text-yellow-400' };
-      default: return { icon: null, classes: 'bg-slate-500/20 text-slate-400' };
+      case 'available': return { icon: <CheckCircle2 size={14} className="mr-1" />, classes: 'bg-emerald-100 text-emerald-700' };
+      case 'unavailable': return { icon: <XCircle size={14} className="mr-1" />, classes: 'bg-rose-100 text-rose-700' };
+      case 'tentative': return { icon: <AlertCircle size={14} className="mr-1" />, classes: 'bg-amber-100 text-amber-700' };
+      default: return { icon: null, classes: 'bg-slate-100 text-slate-700' };
     }
   };
 
   return (
-    <div className="w-full space-y-6 text-slate-200">
+    <div className="w-full space-y-6 text-slate-900">
       
       {/* 1. Availability Barometer Card */}
-      <div className="bg-slate-800/90 border border-slate-700 rounded-2xl p-5 shadow-lg">
+      <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold text-white flex items-center">
-            <Clock size={20} className="text-emerald-400 mr-2" />
+          <h2 className="text-lg font-bold text-slate-900 flex items-center">
+            <Clock size={20} className="text-emerald-600 mr-2" />
             48H Availability Window
           </h2>
         </div>
         
         <div className="mb-4">
           <div className="flex justify-between text-sm mb-1">
-            <span className="text-slate-300">10 of 14 squad members responded</span>
-            <span className="text-emerald-400 font-medium">71%</span>
+            <span className="text-slate-600">10 of 14 squad members responded</span>
+            <span className="text-emerald-700 font-medium">71%</span>
           </div>
-          <div className="h-2.5 w-full bg-slate-700 rounded-full overflow-hidden">
+          <div className="h-2.5 w-full bg-slate-100 rounded-full overflow-hidden">
             <div className="h-full bg-emerald-500 rounded-full" style={{ width: '71%' }}></div>
           </div>
-          <p className="text-xs text-slate-400 mt-2">18 hours remaining</p>
+          <p className="text-xs text-slate-500 mt-2">18 hours remaining</p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 mt-5">
-          <button className="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-2 px-4 rounded-xl font-medium text-sm transition-colors flex items-center justify-center">
+          <button className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-4 rounded-xl font-medium text-sm transition-colors flex items-center justify-center">
             <Send size={16} className="mr-2" />
             WhatsApp Ping (4 Pending)
           </button>
-          <button className="flex-1 bg-amber-600 hover:bg-amber-500 text-white py-2 px-4 rounded-xl font-medium text-sm transition-colors flex items-center justify-center">
+          <button className="flex-1 bg-amber-500 hover:bg-amber-600 text-white py-2 px-4 rounded-xl font-medium text-sm transition-colors flex items-center justify-center">
             <Lock size={16} className="mr-2" />
             Lock Playing 12
           </button>
@@ -105,16 +105,16 @@ export default function SquadSelection() {
       </div>
 
       {/* 2. Interactive Player Roster */}
-      <div className="bg-slate-800/90 border border-slate-700 rounded-2xl p-5 shadow-lg">
+      <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-lg font-bold text-white flex items-center">
-            <Users size={20} className="text-blue-400 mr-2" />
+          <h2 className="text-lg font-bold text-slate-900 flex items-center">
+            <Users size={20} className="text-blue-600 mr-2" />
             Playing 12 Selection
           </h2>
           <div className={`px-3 py-1 rounded-full text-sm font-bold flex items-center border ${
-            isExact ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' : 
-            isOver ? 'bg-rose-500/20 text-rose-400 border-rose-500/30' : 
-            'bg-slate-700 text-slate-300 border-slate-600'
+            isExact ? 'bg-emerald-100 text-emerald-700 border-emerald-200' : 
+            isOver ? 'bg-rose-100 text-rose-700 border-rose-200' : 
+            'bg-slate-100 text-slate-600 border-slate-300'
           }`}>
             Selected: {selectedCount}/12
           </div>
@@ -129,8 +129,8 @@ export default function SquadSelection() {
               <div 
                 key={player.id} 
                 className={`flex items-center justify-between p-3 rounded-xl border transition-colors ${
-                  player.selected ? 'bg-slate-700/50 border-slate-600' : 'bg-slate-800/50 border-slate-700'
-                } ${isUnavailable ? 'opacity-60 grayscale-[0.5]' : 'hover:border-slate-500'}`}
+                  player.selected ? 'bg-emerald-50/50 border-emerald-200' : 'bg-white border-slate-200'
+                } ${isUnavailable ? 'opacity-60 grayscale-[0.5]' : 'hover:border-emerald-300'}`}
               >
                 <div className="flex items-center flex-1 min-w-0">
                   <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm shrink-0 shadow-sm ${getRoleAvatarColors(player.role)}`}>
@@ -139,8 +139,8 @@ export default function SquadSelection() {
                   
                   <div className="ml-3 truncate pr-2">
                     <div className="flex items-center">
-                      <span className="font-semibold text-white truncate">{player.name}</span>
-                      {player.isCaptain && <Star size={14} className="text-amber-400 ml-1.5 fill-amber-400 shrink-0" />}
+                      <span className="font-semibold text-slate-900 truncate">{player.name}</span>
+                      {player.isCaptain && <Star size={14} className="text-amber-500 ml-1.5 fill-amber-500 shrink-0" />}
                     </div>
                     <div className="flex items-center mt-1 gap-2 flex-wrap">
                       <span className={`text-[10px] uppercase font-bold px-2 py-0.5 rounded border ${getRoleColors(player.role)}`}>
@@ -164,7 +164,7 @@ export default function SquadSelection() {
                       disabled={isUnavailable}
                     />
                     <div className={`w-11 h-6 rounded-full peer peer-focus:ring-2 peer-focus:ring-emerald-500/50 transition-colors ${
-                      player.selected ? 'bg-emerald-500' : 'bg-slate-600'
+                      player.selected ? 'bg-emerald-500' : 'bg-slate-300'
                     } ${isUnavailable ? 'cursor-not-allowed' : ''}`}>
                       <div className={`absolute top-[2px] left-[2px] bg-white border-slate-300 border rounded-full h-5 w-5 transition-transform ${
                         player.selected ? 'translate-x-full border-white' : ''
@@ -179,26 +179,26 @@ export default function SquadSelection() {
       </div>
 
       {/* 3. Match Poster Preview Card */}
-      <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-6 shadow-lg relative overflow-hidden">
+      <div className="bg-gradient-to-br from-emerald-700 to-emerald-900 border border-emerald-800 rounded-2xl p-6 shadow-lg relative overflow-hidden">
         {/* Decorative background element */}
-        <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-emerald-500/10 rounded-full blur-xl"></div>
+        <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-white/10 rounded-full blur-xl"></div>
         
         <div className="relative z-10 flex flex-col items-center text-center">
-          <div className="w-16 h-16 bg-slate-800 border-2 border-slate-600 rounded-2xl flex items-center justify-center mb-3 shadow-md rotate-3">
-            <User size={32} className="text-slate-400" />
+          <div className="w-16 h-16 bg-white border-2 border-emerald-600 rounded-2xl flex items-center justify-center mb-3 shadow-md rotate-3">
+            <User size={32} className="text-emerald-700" />
           </div>
           
           <h3 className="text-xl font-black text-white tracking-wide uppercase mb-1">Pune Strikers CC</h3>
-          <p className="text-sm font-medium text-emerald-400 mb-6 bg-emerald-500/10 px-3 py-1 rounded-full">
+          <p className="text-sm font-medium text-emerald-100 mb-6 bg-black/20 px-3 py-1 rounded-full">
             {selectedCount} Players Selected
           </p>
           
           <div className="flex flex-col sm:flex-row w-full gap-3 mt-2">
-            <button className="flex-1 bg-slate-700 hover:bg-slate-600 text-white py-2.5 px-4 rounded-xl font-medium text-sm transition-colors flex items-center justify-center border border-slate-600">
+            <button className="flex-1 bg-white hover:bg-slate-50 text-emerald-900 py-2.5 px-4 rounded-xl font-semibold text-sm transition-colors flex items-center justify-center shadow-sm">
               <Download size={16} className="mr-2" />
               Download Poster
             </button>
-            <button className="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-2.5 px-4 rounded-xl font-medium text-sm transition-colors flex items-center justify-center shadow-lg shadow-emerald-900/20">
+            <button className="flex-1 bg-emerald-500 hover:bg-emerald-400 text-white py-2.5 px-4 rounded-xl font-semibold text-sm transition-colors flex items-center justify-center shadow-lg shadow-emerald-900/20">
               <Share2 size={16} className="mr-2" />
               Share to WhatsApp
             </button>

@@ -54,54 +54,54 @@ export default function FinancialSettlement() {
   };
 
   return (
-    <div className="w-full text-slate-200 pb-28 space-y-6">
+    <div className="w-full text-slate-700 pb-28 space-y-6">
       {/* Toast Notification */}
       {toastMessage && (
-        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-slate-800 border border-slate-600 text-white px-4 py-2 rounded-lg shadow-xl z-50 flex items-center gap-2 animate-bounce">
-          <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white border border-slate-200 text-slate-900 px-4 py-2 rounded-lg shadow-xl z-50 flex items-center gap-2 animate-bounce">
+          <CheckCircle2 className="w-5 h-5 text-emerald-500" />
           <span className="text-sm font-medium">{toastMessage}</span>
         </div>
       )}
         {/* Expense Calculator Header Card */}
-        <div className="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg">
-          <div className="bg-slate-700/50 p-4 border-b border-slate-700 flex items-center gap-3">
-            <Calculator className="w-6 h-6 text-emerald-400" />
-            <h2 className="text-xl font-bold text-white">Match Expense Calculator</h2>
+        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+          <div className="bg-slate-50 p-4 border-b border-slate-200 flex items-center gap-3">
+            <Calculator className="w-6 h-6 text-emerald-600" />
+            <h2 className="text-xl font-bold text-slate-900">Match Expense Calculator</h2>
           </div>
           
           <div className="p-4 md:p-6">
             <div className="grid grid-cols-2 gap-4 md:gap-6 mb-6">
-              <div className="flex justify-between items-center bg-slate-700/30 p-3 rounded-xl border border-slate-700/50">
-                <span className="text-slate-400 text-sm md:text-base">Ground Fee</span>
-                <span className="font-semibold text-white flex items-center"><IndianRupee className="w-3 h-3 md:w-4 md:h-4 mr-0.5" />1,600</span>
+              <div className="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
+                <span className="text-slate-500 text-sm md:text-base">Ground Fee</span>
+                <span className="font-semibold text-slate-900 flex items-center"><IndianRupee className="w-3 h-3 md:w-4 md:h-4 mr-0.5" />1,600</span>
               </div>
-              <div className="flex justify-between items-center bg-slate-700/30 p-3 rounded-xl border border-slate-700/50">
-                <span className="text-slate-400 text-sm md:text-base">Umpire & Scorer</span>
-                <span className="font-semibold text-white flex items-center"><IndianRupee className="w-3 h-3 md:w-4 md:h-4 mr-0.5" />800</span>
+              <div className="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
+                <span className="text-slate-500 text-sm md:text-base">Umpire & Scorer</span>
+                <span className="font-semibold text-slate-900 flex items-center"><IndianRupee className="w-3 h-3 md:w-4 md:h-4 mr-0.5" />800</span>
               </div>
-              <div className="flex justify-between items-center bg-slate-700/30 p-3 rounded-xl border border-slate-700/50">
-                <span className="text-slate-400 text-sm md:text-base">Match Balls (2x SG)</span>
-                <span className="font-semibold text-white flex items-center"><IndianRupee className="w-3 h-3 md:w-4 md:h-4 mr-0.5" />400</span>
+              <div className="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
+                <span className="text-slate-500 text-sm md:text-base">Match Balls (2x SG)</span>
+                <span className="font-semibold text-slate-900 flex items-center"><IndianRupee className="w-3 h-3 md:w-4 md:h-4 mr-0.5" />400</span>
               </div>
-              <div className="flex justify-between items-center bg-slate-700/30 p-3 rounded-xl border border-slate-700/50">
-                <span className="text-slate-400 text-sm md:text-base">Refreshments</span>
-                <span className="font-semibold text-white flex items-center"><IndianRupee className="w-3 h-3 md:w-4 md:h-4 mr-0.5" />500</span>
+              <div className="flex justify-between items-center bg-slate-50 p-3 rounded-xl border border-slate-200">
+                <span className="text-slate-500 text-sm md:text-base">Refreshments</span>
+                <span className="font-semibold text-slate-900 flex items-center"><IndianRupee className="w-3 h-3 md:w-4 md:h-4 mr-0.5" />500</span>
               </div>
             </div>
 
-            <div className="h-px bg-slate-700 my-4 w-full"></div>
+            <div className="h-px bg-slate-200 my-4 w-full"></div>
 
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-2">
               <div className="text-center md:text-left">
-                <div className="text-sm text-slate-400 mb-1">Total Team Expense</div>
-                <div className="text-3xl font-bold text-emerald-400 flex items-center justify-center md:justify-start">
+                <div className="text-sm text-slate-500 mb-1">Total Team Expense</div>
+                <div className="text-3xl font-bold text-emerald-600 flex items-center justify-center md:justify-start">
                   <IndianRupee className="w-6 h-6 mr-1" />3,300
                 </div>
               </div>
               
-              <div className="bg-slate-700/50 px-6 py-4 rounded-xl border border-slate-600 w-full md:w-auto flex flex-col items-center">
-                <div className="text-sm text-slate-300 mb-1">Participating Players: <span className="font-bold text-white">11</span></div>
-                <div className="text-lg font-semibold text-amber-400 flex items-center">
+              <div className="bg-slate-50 px-6 py-4 rounded-xl border border-slate-200 w-full md:w-auto flex flex-col items-center">
+                <div className="text-sm text-slate-500 mb-1">Participating Players: <span className="font-bold text-slate-900">11</span></div>
+                <div className="text-lg font-semibold text-amber-600 flex items-center">
                   Per-Head Cost: <IndianRupee className="w-4 h-4 ml-2 mr-0.5" />300
                 </div>
               </div>
@@ -110,11 +110,11 @@ export default function FinancialSettlement() {
         </div>
 
         {/* Section A: Monthly Kitty Members */}
-        <div className="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg">
-          <div className="bg-slate-700/50 p-4 border-b border-slate-700 flex items-center gap-3">
-            <Wallet className="w-6 h-6 text-sky-400" />
-            <h2 className="text-xl font-bold text-white">Monthly Kitty Members</h2>
-            <span className="text-xs bg-slate-600 px-2 py-1 rounded text-slate-200 ml-auto hidden md:inline-block">Advance Balance</span>
+        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+          <div className="bg-slate-50 p-4 border-b border-slate-200 flex items-center gap-3">
+            <Wallet className="w-6 h-6 text-sky-500" />
+            <h2 className="text-xl font-bold text-slate-900">Monthly Kitty Members</h2>
+            <span className="text-xs bg-white border border-slate-200 shadow-sm px-2 py-1 rounded text-slate-600 ml-auto hidden md:inline-block font-medium">Advance Balance</span>
           </div>
 
           <div className="p-4 md:p-6 flex flex-col gap-4">
@@ -123,14 +123,14 @@ export default function FinancialSettlement() {
               const initials = member.name.split(' ').map(n => n[0]).join('');
               
               return (
-                <div key={member.id} className="flex flex-col sm:flex-row justify-between sm:items-center bg-slate-700/20 p-4 rounded-xl border border-slate-700 hover:border-slate-600 transition-colors gap-4 sm:gap-2">
+                <div key={member.id} className="flex flex-col sm:flex-row justify-between sm:items-center bg-white p-4 rounded-xl border border-slate-200 hover:border-slate-300 hover:shadow-sm transition-all gap-4 sm:gap-2">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-slate-600 flex items-center justify-center font-bold text-white shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-700 shrink-0 border border-slate-200">
                       {initials}
                     </div>
                     <div>
-                      <div className="font-medium text-white">{member.name}</div>
-                      <div className={`text-sm flex items-center gap-1 ${isLowBalance ? 'text-rose-400' : 'text-slate-400'}`}>
+                      <div className="font-medium text-slate-900">{member.name}</div>
+                      <div className={`text-sm flex items-center gap-1 ${isLowBalance ? 'text-rose-600 font-medium' : 'text-slate-500'}`}>
                         {isLowBalance && <AlertTriangle className="w-3 h-3" />}
                         Balance: ₹{member.balance}
                       </div>
@@ -139,7 +139,7 @@ export default function FinancialSettlement() {
 
                   <div>
                     {member.deducted ? (
-                      <div className="flex items-center justify-center gap-1.5 px-4 py-2 bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20 text-sm font-medium w-full sm:w-auto">
+                      <div className="flex items-center justify-center gap-1.5 px-4 py-2 bg-emerald-50 text-emerald-700 rounded-lg border border-emerald-200 text-sm font-medium w-full sm:w-auto">
                         <CheckCircle2 className="w-4 h-4" />
                         Deducted • New Bal: ₹{member.balance}
                       </div>
@@ -149,8 +149,8 @@ export default function FinancialSettlement() {
                         disabled={isLowBalance}
                         className={`w-full sm:w-auto flex justify-center items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                           isLowBalance 
-                            ? 'bg-slate-700 text-slate-500 cursor-not-allowed'
-                            : 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-500/20 active:scale-95'
+                            ? 'bg-slate-100 text-slate-400 cursor-not-allowed border border-slate-200'
+                            : 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-md active:scale-95'
                         }`}
                       >
                         {isLowBalance ? 'Insufficient Balance' : 'Deduct ₹300'}
@@ -164,11 +164,11 @@ export default function FinancialSettlement() {
         </div>
 
         {/* Section B: Pay-Per-Play Members */}
-        <div className="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg">
-          <div className="bg-slate-700/50 p-4 border-b border-slate-700 flex items-center gap-3">
-            <CreditCard className="w-6 h-6 text-fuchsia-400" />
-            <h2 className="text-xl font-bold text-white">Pay-Per-Play Members</h2>
-            <span className="text-xs bg-slate-600 px-2 py-1 rounded text-slate-200 ml-auto hidden md:inline-block">Direct Payment</span>
+        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+          <div className="bg-slate-50 p-4 border-b border-slate-200 flex items-center gap-3">
+            <CreditCard className="w-6 h-6 text-fuchsia-500" />
+            <h2 className="text-xl font-bold text-slate-900">Pay-Per-Play Members</h2>
+            <span className="text-xs bg-white border border-slate-200 shadow-sm px-2 py-1 rounded text-slate-600 ml-auto hidden md:inline-block font-medium">Direct Payment</span>
           </div>
 
           <div className="p-4 md:p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -176,24 +176,24 @@ export default function FinancialSettlement() {
               const initials = member.name.split(' ').map(n => n[0]).join('');
               
               return (
-                <div key={member.id} className="bg-slate-700/20 p-4 rounded-xl border border-slate-700 hover:border-slate-600 transition-colors flex flex-col gap-3">
+                <div key={member.id} className="bg-white p-4 rounded-xl border border-slate-200 hover:border-slate-300 hover:shadow-sm transition-all flex flex-col gap-3">
                   <div className="flex justify-between items-start">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-slate-600 flex items-center justify-center font-bold text-white shrink-0">
+                      <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-700 shrink-0 border border-slate-200">
                         {initials}
                       </div>
                       <div>
-                        <div className="font-medium text-white">{member.name}</div>
-                        <div className="text-sm text-slate-400">Due: ₹{member.amount}</div>
+                        <div className="font-medium text-slate-900">{member.name}</div>
+                        <div className="text-sm text-slate-500">Due: ₹{member.amount}</div>
                       </div>
                     </div>
                     <div>
                       {member.paid ? (
-                        <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">
+                        <span className="inline-flex items-center gap-1 text-xs font-medium px-2 py-1 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-full">
                           <CheckCircle2 className="w-3 h-3" /> Paid via UPI
                         </span>
                       ) : (
-                        <span className="inline-flex items-center text-xs font-medium px-2 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full">
+                        <span className="inline-flex items-center text-xs font-medium px-2 py-1 bg-amber-50 text-amber-700 border border-amber-200 rounded-full">
                           Pending
                         </span>
                       )}
@@ -204,7 +204,7 @@ export default function FinancialSettlement() {
                     {!member.paid && (
                       <button 
                         onClick={() => generateUpiLink(member.name)}
-                        className="flex-1 bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs py-2 px-3 rounded-lg flex items-center justify-center gap-1 transition-colors"
+                        className="flex-1 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs py-2 px-3 rounded-lg flex items-center justify-center gap-1 transition-colors font-medium"
                       >
                         <ExternalLink className="w-3 h-3" /> UPI Link
                       </button>
@@ -213,8 +213,8 @@ export default function FinancialSettlement() {
                       onClick={() => togglePayment(member.id)}
                       className={`flex-1 text-xs py-2 px-3 rounded-lg flex items-center justify-center font-medium transition-colors ${
                         member.paid 
-                          ? 'bg-slate-700 hover:bg-rose-900/40 text-slate-300 hover:text-rose-400 border border-slate-600 hover:border-rose-500/30' 
-                          : 'bg-emerald-600 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-500/20'
+                          ? 'bg-white hover:bg-rose-50 text-slate-600 hover:text-rose-600 border border-slate-200 hover:border-rose-200' 
+                          : 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-md'
                       }`}
                     >
                       {member.paid ? 'Mark as Unpaid' : 'Mark as Received'}
@@ -227,25 +227,25 @@ export default function FinancialSettlement() {
         </div>
 
       {/* Action Bar (Sticky at Bottom) */}
-      <div className="fixed bottom-0 left-0 right-0 bg-slate-900/90 backdrop-blur-md border-t border-slate-700 p-4 z-40">
+      <div className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-slate-200 p-4 z-40 shadow-[0_-4px_6px_-1px_rgb(0,0,0,0.05)]">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-3">
           <button 
             onClick={() => showToast('Synced successfully with Splitwise!')}
-            className="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white py-3 px-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-colors active:scale-95"
+            className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-3 px-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-colors active:scale-95 shadow-sm"
           >
             <RefreshCw className="w-4 h-4" /> Sync to Splitwise
           </button>
           
           <button 
             onClick={() => showToast('Balance sheet exported as CSV.')}
-            className="flex-1 bg-slate-700 hover:bg-slate-600 text-white py-3 px-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-colors active:scale-95"
+            className="flex-1 bg-slate-800 hover:bg-slate-900 text-white py-3 px-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-colors active:scale-95 shadow-sm"
           >
             <Download className="w-4 h-4" /> Export Balance Sheet
           </button>
           
           <button 
             onClick={() => showToast('Match cycle closed. Financials locked.')}
-            className="flex-1 bg-rose-600 hover:bg-rose-500 text-white py-3 px-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-colors active:scale-95"
+            className="flex-1 bg-rose-600 hover:bg-rose-700 text-white py-3 px-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-colors active:scale-95 shadow-sm"
           >
             <XCircle className="w-4 h-4" /> Close Match Cycle
           </button>
