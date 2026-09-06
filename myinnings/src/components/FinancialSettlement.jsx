@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { 
   IndianRupee, Calculator, AlertTriangle, CheckCircle2, CreditCard, 
-  Wallet, ExternalLink, FileSpreadsheet, XCircle, RefreshCw, 
-  Download, ArrowRight 
+  Wallet, ExternalLink, XCircle, RefreshCw, 
+  Download 
 } from 'lucide-react';
 
 export default function FinancialSettlement() {

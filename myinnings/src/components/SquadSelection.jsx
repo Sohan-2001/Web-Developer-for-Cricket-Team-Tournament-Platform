@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Users, Clock, Send, Lock, CheckCircle2, XCircle, AlertCircle, ChevronDown, ChevronUp, Download, Share2, Star, User } from 'lucide-react';
+import { Users, Clock, Send, Lock, CheckCircle2, XCircle, AlertCircle, Download, Share2, Star, User } from 'lucide-react';
 
 const initialSquad = [
   { id: 1, name: 'Sohan Khatavkar', role: 'All-Rounder', status: 'available', selected: true, isCaptain: true },
